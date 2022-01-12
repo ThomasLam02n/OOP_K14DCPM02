@@ -1,6 +1,6 @@
 package tuan1.object_oriented;
 
-public class object_oriented_TestDrive {
+public class OOTestDrive {
     public static void main(String[] args) {
          //Khai báo biến "account", dùng toán tử "new" tạo đối tượng Account trong vùng nhớ Heap, Liên kết biến "account" tới đối trượng trong vùng nhớ heap bằng toán tử gán " = "
         Account account = new Account();
