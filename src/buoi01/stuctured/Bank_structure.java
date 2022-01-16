@@ -1,4 +1,4 @@
-package tuan1.stuctured;
+package buoi01.stuctured;
 
 import java.util.Scanner;
 

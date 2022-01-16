@@ -1,4 +1,4 @@
-package tuan1.nonstructure;
+package buoi01.nonstructure;
 
 import java.util.Scanner;
 

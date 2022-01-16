@@ -1,4 +1,4 @@
-package tuan1.object_oriented;
+package buoi01.object_oriented;
 
 public class Customer {
     String name;
