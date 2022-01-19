@@ -7,11 +7,11 @@ public class Cow {
     String color;
 
 
-    public void Cow(String g, String gi, int c, String cl){
-        gioitinh = g;
-        giong = gi;
-        cannang = c;
-        color = cl;
+    public void Cow(String gioitinh, String giong, int cannang, String color){
+        this.gioitinh = gioitinh;
+        this.giong = giong;
+        this.cannang = cannang;
+        this.color = color;
     }
 
     public void inThongtinCow(){
@@ -23,10 +23,10 @@ public class Cow {
     }
 
     public void an(){
-        System.out.println("Đang ăn");
+        System.out.println("Đang ăn: nhoằm nhoằm");
     }
 
     public void keu(){
-        System.out.println("Đang kêu");
+        System.out.println("Đang kêu: BÒ!!!!!!!");
     }
 }

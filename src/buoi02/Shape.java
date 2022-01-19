@@ -4,9 +4,11 @@ public class Shape {
     String kind;
     String color;
 
-    public void Shape(String k, String c){
-        kind = k;
-        color = c;
+    Shape(){}
+    
+    public void Shape(String kind, String color){
+        this.kind = kind;
+        this.color = color;
     }
 
     public void print_info_shape(){
@@ -23,7 +25,7 @@ public class Shape {
     }
 
     public void swingandplaymusic(){
-        swing360Degree();
-        playmusic();
+        this.swing360Degree();
+        this.playmusic();
     }
 }

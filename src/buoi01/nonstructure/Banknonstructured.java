@@ -2,7 +2,7 @@ package buoi01.nonstructure;
 
 import java.util.Scanner;
 
-public class Bank {
+public class Banknonstructured {
     //Lập trình không có cấu trúc
     public static void main(String[] args) {
         int so_tk = 54321;

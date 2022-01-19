@@ -2,7 +2,7 @@ package buoi01.stuctured;
 
 import java.util.Scanner;
 
-public class Bank_structure { //Lập trình có cấu trúc
+public class Bankstructure { //Lập trình có cấu trúc
     static int so_tk = 54321;
     static int so_du_tk = 0;
     static Scanner bienNhap = new Scanner(System.in);

@@ -6,11 +6,11 @@ public class Student {
     String mssv;
     String lop;
 
-    public void Student(String n, int a, String m, String l){
-        name = n;
-        age = a;
-        mssv = m;
-        lop = l;
+    public void Student(String name, int age, String mssv, String lop){
+        this.name = name;
+        this.age = age;
+        this.mssv = mssv;
+        this.lop = lop;
     }
 
     public void print_info_Student(){
