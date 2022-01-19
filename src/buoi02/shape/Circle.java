@@ -1,4 +1,4 @@
-package buoi02;
+package buoi02.shape;
 
 public class Circle {
     String sound = "circle.aif";

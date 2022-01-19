@@ -1,9 +1,9 @@
-package buoi02;
+package buoi02.shape;
 
-public class Amoeba {
-    String sound = "amoeba.hif";
-    
-    public Amoeba(String sound){
+public class Triangle {
+    String sound = "triangle.aif";
+
+    public Triangle(String sound){
         this.sound = sound;
     }
 
@@ -13,5 +13,5 @@ public class Amoeba {
 
     void playSound(){
         System.out.println("Play sound: "+ this.sound + " music");
-    } 
+    }
 }
