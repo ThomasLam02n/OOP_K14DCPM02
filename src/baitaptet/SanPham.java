@@ -3,13 +3,14 @@ package baitaptet;
 import java.util.Scanner;
 
 public class SanPham {
-    String tenSP;
-    double donGia;
-    double giamGia;
-
-    Scanner bienNhap = new Scanner(System.in);
+    //Attribute
+    private String tenSP;
+    private double donGia;
+    private double giamGia;
     private double thueNhapKhau;
+    Scanner bienNhap = new Scanner(System.in);
 
+    //Methods
     public SanPham() {
 
     }
@@ -25,9 +26,36 @@ public class SanPham {
     }
 
     private void getThueNhapKhau(double thueNhapKhau) {
-        thueNhapKhau = 10 * (donGia - giamGia) / 100;
+        thueNhapKhau = 10 * donGia / 100;
         System.out.println("Thuế nhập khẩu: " + thueNhapKhau);
     }
+
+    public String gettenSP(){
+        return tenSP;
+    }
+
+    public void settenSP(String tenSP){
+        this.tenSP = tenSP;
+    }
+
+    public double getdonGia(){
+        return donGia;
+    }
+
+    public void setdonGia(double donGia){
+        if(donGia <= 100.000){
+        this.donGia = donGia;
+        }
+    }
+
+    public double getgiamGia(){
+        return giamGia;
+    }
+
+    public void setgiamGia(double giamGia){
+        this.giamGia = giamGia;
+    }
+
 
     public void xuat() {
         System.out.print("Tên sản phẩm: " + tenSP);
