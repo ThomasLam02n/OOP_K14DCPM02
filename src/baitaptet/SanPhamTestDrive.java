@@ -20,14 +20,17 @@ public class SanPhamTestDrive {
         sp2.xuat(); */
 
         //Bài 4
-        // Đang sài private cho attribute nên muốn thay đổi thì tham chiếu đến set và get của attribute đó
         /* SanPham sp1 = new SanPham("Bánh Bao", 17.5, 2.5);
+        sp1.setdonGia(18.5);
         System.out.println(sp1.getdonGia());
-        sp1.setdonGia(18.5); // setdonGia đươc quy định ko lớn hơn 100.000
+        sp1.setdonGia(101.0); // setdonGia đươc quy định ko lớn hơn 100.000
+        System.out.println(sp1.getdonGia()); // vì lớn hơn 100.000 nên in ra giá trị trước
         sp1.xuat(); */
-        //set dùng ghi
-        //get dùng đọc
+        
 
         //Bài 5
+        QuanLySanPham qlsp = new QuanLySanPham();
+        qlsp.addFirst();
+        qlsp.print();
     }
 }

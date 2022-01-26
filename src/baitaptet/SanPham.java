@@ -1,5 +1,6 @@
 package baitaptet;
 
+import java.lang.reflect.Constructor;
 import java.util.Scanner;
 
 public class SanPham {
@@ -9,8 +10,11 @@ public class SanPham {
     private double giamGia;
     private double thueNhapKhau;
     Scanner bienNhap = new Scanner(System.in);
+    // Đang sài private cho attribute nên muốn thay đổi thì tham chiếu đến set và get của attribute đó
 
     //Methods
+
+    //Constructor
     public SanPham() {
 
     }
@@ -25,6 +29,9 @@ public class SanPham {
         this.giamGia = giamGia;
     }
 
+    //get and set
+    //set dùng để ghi, thay đổi 
+    //get chỉ dùng để đọc 
     private void getThueNhapKhau(double thueNhapKhau) {
         thueNhapKhau = 10 * donGia / 100;
         System.out.println("Thuế nhập khẩu: " + thueNhapKhau);
