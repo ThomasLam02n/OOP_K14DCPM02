@@ -1,10 +1,13 @@
 package buoi04;
 
 public class GuessGame {
+    private Player p1;
+    private Player p2;
+    private Player p3;
     public void startGame() {
-       Player p1 = new Player();
-       Player p2 = new Player();
-       Player p3 = new Player();
+        p1 = new Player();
+        p2 = new Player();
+        p3 = new Player();
 
         int guessp1 = 0;
         int guessp2 = 0;
@@ -22,11 +25,11 @@ public class GuessGame {
             p2.guess();
             p3.guess();
             
-            guessp1 = p1.number;
+            guessp1 = p1.getnumber();
             System.out.println("Player one guessed " + guessp1);
-            guessp2 = p2.number;
+            guessp2 = p2.getnumber();
             System.out.println("Player two guessed " + guessp2);
-            guessp3 = p3.number;
+            guessp3 = p3.getnumber();
             System.out.println("Player three guessed " + guessp3);
             if (guessp1 == targetNumber) {
                 p1isRight = true;

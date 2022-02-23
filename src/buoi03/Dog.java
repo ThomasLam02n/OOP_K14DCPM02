@@ -1,6 +1,7 @@
 package buoi03;
 
 import java.lang.reflect.WildcardType;
+import java.util.Set;
 
 public class Dog {
     String name;
@@ -30,12 +31,17 @@ public class Dog {
         System.out.print(" Cân nặng: "+weight+"kg");
     }
 
-    public void bark(){
+
+    public int setbark(int age){
+        return this.bark(age);
+    }
+    private int bark(int age){
         if(age < 5){
             System.out.print(" Sủa: gâu gâu");
         }else{
             System.out.print(" Sủa: gu gu");
         }
+        return this.age;
     }
 
     public void run(){

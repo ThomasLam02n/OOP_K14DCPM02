@@ -2,23 +2,29 @@ package buoi02.shape;
 
 public class ShapeTestDrive {
     public static void main(String[] args) {
-        System.out.println("Hình Tam Giác");
-        Triangle triangle = new Triangle("mùa xuân");
+        System.out.println("Triangle");
+        Triangle triangle = new Triangle();
+        triangle.setSound("Mua xuan");
         triangle.rotate();
         triangle.playSound();
 
-        System.out.println("Hình Vuông");
-        Square square = new Square("mùa hè");
+        System.out.println("Square");
+        Square square = new Square();
+        square.setSound("Mua he");
         square.rotate();
         square.playSound();
 
-        System.out.println("Hình Tròn");
-        Circle circle = new Circle("Mùa thu");
+        System.out.println("Circle");
+        Circle circle = new Circle();
+        circle.setSound("Mua thu");
         circle.rotate();
         circle.playSound();
 
-        System.out.println("Hình Amoeba");
-        Amoeba amoeba = new Amoeba("Mùa đông", 7.7, 2.2);
+        System.out.println("Amoeba");
+        Amoeba amoeba = new Amoeba();
+        amoeba.setxPoint(7);
+        amoeba.setyPoint(8);
+        amoeba.setSound("Mua dong");
         amoeba.rotate();
         amoeba.playSound();
     }

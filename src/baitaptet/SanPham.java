@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.util.Scanner;
 
 public class SanPham {
-    //Attribute
+    //implementation
     private String tenSP;
     private double donGia;
     private double giamGia;
@@ -29,12 +29,16 @@ public class SanPham {
         this.giamGia = giamGia;
     }
 
-    //get and set
-    //set dùng để ghi, thay đổi 
-    //get chỉ dùng để đọc 
-    private void getThueNhapKhau(double thueNhapKhau) {
-        thueNhapKhau = 10 * donGia / 100;
-        System.out.println("Thuế nhập khẩu: " + thueNhapKhau);
+    //interfaces
+    public double getThueNhapKhau() {
+        return this.caculateThueNhapKhau();
+    }
+
+    //implementation
+    private double caculateThueNhapKhau(){
+        this.thueNhapKhau = 10 * donGia / 100; 
+        System.out.println("Thuế nhập khẩu: " + this.thueNhapKhau);
+        return this.donGia;
     }
 
     public String gettenSP(){
@@ -68,10 +72,10 @@ public class SanPham {
         System.out.print("Tên sản phẩm: " + tenSP);
         System.out.print("  Đơn giá: " + donGia);
         System.out.print("  Giảm giá: " + giamGia + "  ");
-        getThueNhapKhau(thueNhapKhau);
+        getThueNhapKhau();
     }
 
-    void nhap() {
+    public void nhap() {
         System.out.println("Tên sản phẩm: ");
         this.tenSP = bienNhap.nextLine();
         System.out.println("Đơn giá:");

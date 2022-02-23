@@ -29,8 +29,8 @@ public class SanPhamTestDrive {
         
 
         //Bài 5
-        QuanLySanPham qlsp = new QuanLySanPham();
+        /* QuanLySanPham qlsp = new QuanLySanPham();
         qlsp.addFirst();
-        qlsp.print();
+        qlsp.print(); */
     }
 }
