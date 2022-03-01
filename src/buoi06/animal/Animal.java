@@ -1,4 +1,4 @@
-package buoi06.animall;
+package buoi06.animal;
 
 public class Animal {
     private String picture;

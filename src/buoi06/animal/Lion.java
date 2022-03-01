@@ -1,7 +1,7 @@
-package buoi06.animall;
+package buoi06.animal;
 
-public class Lion extends Animal{
-
+public class Lion extends Canine{
+   
     public Lion(){}
     @Override
     protected void eat(){

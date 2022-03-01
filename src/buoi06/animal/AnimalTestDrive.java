@@ -1,4 +1,4 @@
-package buoi06.animall;
+package buoi06.animal;
 
 public class AnimalTestDrive {
     public static void main(String[] args) {
@@ -7,6 +7,11 @@ public class AnimalTestDrive {
         lion.makeNoise();
         lion.sleep();
         lion.roam();
+
+        Wofl wofl = new Wofl();
+        wofl.eat();
+        wofl.makeNoise();
+        wofl.roam();
     }
     
 }
