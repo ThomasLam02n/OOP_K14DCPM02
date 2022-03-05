@@ -1,4 +1,4 @@
-package buoi06;
+package buoi06.car;
 
 public class CarTestDrive {
     public static void main(String[] args) {

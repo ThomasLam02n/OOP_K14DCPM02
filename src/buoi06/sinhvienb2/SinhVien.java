@@ -1,4 +1,4 @@
-package buoi06;
+package buoi06.sinhvienb2;
 
 import java.util.Scanner;
 

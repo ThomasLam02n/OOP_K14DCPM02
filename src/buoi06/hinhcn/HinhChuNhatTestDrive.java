@@ -1,4 +1,4 @@
-package buoi06;
+package buoi06.hinhcn;
 
 public class HinhChuNhatTestDrive {
     public static void main(String[] args) {

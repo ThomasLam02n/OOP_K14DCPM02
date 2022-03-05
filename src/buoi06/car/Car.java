@@ -1,4 +1,4 @@
-package buoi06;
+package buoi06.car;
 
 public class Car {
     private String carColor;
