@@ -1,6 +1,6 @@
 package buoi06.animal;
 
-public class Dog extends Feline{
+public class Dog extends Canines{
 
     @Override
     protected void eat(){
@@ -10,5 +10,9 @@ public class Dog extends Feline{
     @Override
     protected void makeNoise(){
         System.out.println("Dog sound");
+    }
+
+    public void chaseCat(){
+        System.out.println("chaseCat...............");
     }
 }

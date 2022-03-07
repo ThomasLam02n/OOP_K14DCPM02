@@ -1,6 +1,6 @@
 package buoi06.animal;
 
-public class Feline extends Animal{
+public class Canines extends Animal{
     
     @Override
     protected void roam(){

@@ -1,6 +1,6 @@
 package buoi06.animal;
 
-public class Wofl extends Feline{
+public class Wofl extends Canines{
     
     @Override
     protected void eat(){

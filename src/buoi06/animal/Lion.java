@@ -1,6 +1,6 @@
 package buoi06.animal;
 
-public class Lion extends Canine{
+public class Lion extends Felines{
    
     public Lion(){}
     @Override
