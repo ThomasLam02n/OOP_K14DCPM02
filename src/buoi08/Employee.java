@@ -8,7 +8,7 @@ public class Employee extends Person {
     @Override
     public String toString() {
 
-        String str = "Name: "+ this.name + "Birthday: "+this.birthday +" Salary: "+this.salary;
+        String str = "Name: "+ this.name + " Birthday: "+this.birthday +" Salary: "+this.salary;
 
         return str;
     }

@@ -30,13 +30,21 @@ public class ChuyenXeNoiThanh extends ChuyenXe {
     @Override
     public String toString() {
     
-        return super.toString() + "So tuyen: "+this.getSoTuyen() + "So KM di duoc: "+this.soKmDiDuoc;
+        return super.toString() + "So tuyen: "+this.soTuyen + "So KM di duoc: "+this.soKmDiDuoc;
     }
 
     public void input(){
+        super.inputChuyenXe();
         System.out.println("So tuyen: ");
         this.soTuyen = sc.nextInt();
         System.out.println("So KM di duoc:");
         this.soKmDiDuoc = sc.nextDouble();
     }
+
+    public void output(){
+        super.outputChuyenXe();
+        System.out.print("  So tuyen: "+soTuyen);
+        System.out.println("  So KM di duoc: "+soKmDiDuoc);
+    }
+
 }

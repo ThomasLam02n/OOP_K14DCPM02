@@ -28,10 +28,11 @@ public class ChuyenXeNgoaiThanh extends ChuyenXe{
 
    @Override
    public String toString() {
-       return super.toString() + "Noi den: "+this.getNoiDen() + "So ngay di duoc: "+this.getSoNgayDiDuoc();
+       return super.toString() + "Noi den: "+this.noiDen + "So ngay di duoc: "+this.soNgayDiDuoc;
    }
 
    public void input(){
+       super.inputChuyenXe();
        System.out.println("Noi den: ");
        this.noiDen = sc.nextLine();
        System.out.println("So ngay di duoc");
@@ -39,7 +40,8 @@ public class ChuyenXeNgoaiThanh extends ChuyenXe{
    }
 
    public void output(){
-       System.out.println("Noi den: "+this.noiDen);
-       System.out.println("So ngay di duoc: "+this.soNgayDiDuoc);
+       super.outputChuyenXe();
+       System.out.print("  Noi den: "+this.noiDen);
+       System.out.println("  So ngay di duoc: "+this.soNgayDiDuoc);
    }
 }

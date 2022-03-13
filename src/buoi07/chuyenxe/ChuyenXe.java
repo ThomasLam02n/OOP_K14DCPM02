@@ -61,14 +61,12 @@ public class ChuyenXe {
         return doanhThu;
     }
 
-    @Override
     public String toString() {
-        String stc = "Ma so Chuyen: "+this.getMaSoChuyen() + "Ho ten TX: "+this.getHoTenTaiXe() + "So xe: "+this.getSoXe();
-        stc += "Doanh Thu" +this.getDoanhThu();
-        return super.toString();
+        return "Ma so Chuyen: "+this.maSoChuyen+ "Ho ten TX: "+this.hoTenTaiXe + "So xe: "+this.soXe
+        + "Doanh Thu" +this.doanhThu;
     }
 
-    public void input(){
+    public void inputChuyenXe(){
         System.out.println("Ma so Chuyen: ");
         this.maSoChuyen = scs.nextInt();
         System.out.println("Ho ten TX: ");
@@ -79,10 +77,10 @@ public class ChuyenXe {
         this.doanhThu = scs.nextDouble();
     }
 
-    public void out(){
-        System.out.println("Ma so Chuyen: "+maSoChuyen);
-        System.out.println("Ho ten TX: "+hoTenTaiXe);
-        System.out.println("So xe: "+soXe);
-        System.out.println("Doanh thu: "+doanhThu);
+    public void outputChuyenXe(){
+        System.out.print("Ma so Chuyen: "+maSoChuyen);
+        System.out.print("  Ho ten TX: "+hoTenTaiXe);
+        System.out.print("  So xe: "+soXe);
+        System.out.print("  Doanh thu: "+doanhThu);
     }
 }
