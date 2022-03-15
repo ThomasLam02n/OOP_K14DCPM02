@@ -7,13 +7,9 @@ public abstract class Animal { //abstract dùng để ko cho class này tạo
 
     public Animal(){}
 
-    protected void makeNoise(){
+    protected abstract void makeNoise();
 
-    }
-
-    protected void eat(){
-
-    }
+    protected abstract void eat();
 
     protected void sleep(){
         System.out.println("Sleeping");
