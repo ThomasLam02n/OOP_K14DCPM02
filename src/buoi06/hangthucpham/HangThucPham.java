@@ -1,11 +1,12 @@
 package buoi06.hangthucpham;
 
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class HangThucPham {
+public class HangThucPham implements Serializable{
     private String maHang;
     private String tenHang;
     private double donGia;
@@ -67,12 +68,12 @@ public class HangThucPham {
     }
 
     public void setNgayHetHang(Date ngayHetHang) {
-        if(ngayHetHang.after(ngaySanXuat)){
+       /*  if(ngayHetHang.after(ngaySanXuat)){
             this.ngayHetHang = ngayHetHang;
         }else{
             System.out.println("Ngay het hang phai sau ngay san xuat !!!");
         }
-        this.ngayHetHang = ngayHetHang;
+        this.ngayHetHang = ngayHetHang; */
     }
 
     public HangThucPham(String maHang){
