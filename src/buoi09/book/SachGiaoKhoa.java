@@ -1,5 +1,7 @@
 package buoi09.book;
 
+import java.text.ParseException;
+
 public class SachGiaoKhoa extends Sach {
     private String tinhTrang;
     private double thanhTien;
@@ -31,8 +33,8 @@ public class SachGiaoKhoa extends Sach {
         this.number = number;
     }
 
-
-    public void nhapSachGK(){
+    @Override
+    public void nhapThongTin() throws ParseException {
         super.nhapThongTin();
         this.setTinhTrang();
     }

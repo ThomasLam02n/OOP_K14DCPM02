@@ -1,5 +1,7 @@
 package buoi09.book;
 
+import java.text.ParseException;
+
 public class SachThamKhao extends Sach{
     private double thue, thanhTien;
 
@@ -17,12 +19,15 @@ public class SachThamKhao extends Sach{
     }
 
     public double setThue() {
+        System.out.println("Thue: ");
         return this.thue = scs.nextDouble();
     }
 
-    public void nhapSachTK(){
+    @Override
+    public void nhapThongTin() throws ParseException {
+        // TODO Auto-generated method stub
         super.nhapThongTin();
-        
+        this.setThue();
     }
 
     @Override
