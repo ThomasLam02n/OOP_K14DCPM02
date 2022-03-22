@@ -75,6 +75,15 @@ public class QuanLyHoaDon{
         System.out.println("Trung binh cong thanh tien theo hd Ngay"+ tongTrungBinhCongThanhTien);
     }
 
+    public void nhapHoaDon(String string) {
+    }
+
+    public void tongSoLuong() {
+    }
+
+    public void inDanhSach() {
+    }
+
 
 
 

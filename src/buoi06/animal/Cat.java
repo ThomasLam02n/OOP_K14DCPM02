@@ -7,7 +7,7 @@ public class Cat extends Felines{
     }
 
     @Override
-    protected void makeNoise(){
+    public void makeNoise(){
         System.out.println("Cat Sound");
     }
 

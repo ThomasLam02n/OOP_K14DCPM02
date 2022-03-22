@@ -56,4 +56,17 @@ public class HoaDonTheoGio extends HoaDon {
         // TODO Auto-generated method stub
         return super.toString()+" So gio thue: "+this.soGioThue;
     }
+
+    @Override
+    public void thanhTien() {
+        // TODO Auto-generated method stub
+        if(soGioThue > 24){
+            this.thanhTien = this.soGioThue * getDonGia();
+        }if(soGioThue > 24 && soGioThue < 30){
+            thanhTien = getDonGia() * 24;
+        }if(soGioThue > 30){
+            System.out.println(" > 30h Khong dung hoa don theo gio !!!");
+        }
+        return;
+    }
 }

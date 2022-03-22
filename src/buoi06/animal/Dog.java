@@ -8,7 +8,7 @@ public class Dog extends Canines{
     }
 
     @Override
-    protected void makeNoise(){
+    public void makeNoise(){
         System.out.println("Dog sound");
     }
 

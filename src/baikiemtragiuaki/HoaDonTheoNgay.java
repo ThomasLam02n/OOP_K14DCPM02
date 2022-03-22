@@ -28,9 +28,6 @@ public class HoaDonTheoNgay extends HoaDon{
 
 
     private void setSoNgayThue(int soNgayThue) {
-        if(soNgayThue > 7){
-            donGia = donGia * 20 / 100;
-        }else
         this.soNgayThue = soNgayThue;
     }
 
@@ -58,6 +55,18 @@ public class HoaDonTheoNgay extends HoaDon{
     public String toString() {
         // TODO Auto-generated method stub
         return super.toString()+" So ngay thue: "+this.soNgayThue;
+    }
+
+
+    @Override
+    protected void thanhTien() {
+        // TODO Auto-generated method stub
+        if(soNgayThue > 7){
+            this.thanhTien = 7*getDonGia() + (((soNgayThue - 7) * getDonGia() * 20)/100);
+        }else{
+            this.thanhTien = soNgayThue*getDonGia();
+        }
+        return;
     }
     
 }

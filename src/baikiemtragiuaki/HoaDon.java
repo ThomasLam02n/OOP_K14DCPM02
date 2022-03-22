@@ -11,6 +11,8 @@ public abstract class HoaDon {
     protected String tenKhachHang;
     protected String maPhong;
     protected double donGia;
+    protected double thanhTien;
+
     Scanner sc = new Scanner(System.in);
     Scanner scs = new Scanner(System.in);
     SimpleDateFormat ngayVN = new SimpleDateFormat("dd/MM/yyyy");
@@ -86,5 +88,5 @@ public abstract class HoaDon {
         " Ten khach hang: "+this.tenKhachHang+" Ma phong: "+this.maPhong+ "Don gia: "+this.donGia;
     }
 
-
+    protected abstract void thanhTien();
 }

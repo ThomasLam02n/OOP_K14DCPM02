@@ -7,7 +7,7 @@ public abstract class Animal { //abstract dùng để ko cho class này tạo
 
     public Animal(){}
 
-    protected abstract void makeNoise();
+    public abstract void makeNoise();
 
     protected abstract void eat();
 
