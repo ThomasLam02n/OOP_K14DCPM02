@@ -51,7 +51,7 @@ public class HoaDonTheoNgay extends HoaDon{
         // TODO Auto-generated method stub
         super.input();
         System.out.print("- Nhập vào số ngày thuê: ");
-        this.soNgayThue = scs.nextInt();
+        this.soNgayThue = scs.nextInt(); 
     }
     
 }

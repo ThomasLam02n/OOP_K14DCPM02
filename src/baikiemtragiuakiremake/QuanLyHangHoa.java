@@ -12,8 +12,8 @@ public class QuanLyHangHoa{
     Scanner sc = new Scanner(System.in);
 
     public void nhapHoaDon(String name) throws ParseException {
-        System.out.println("Chọn Hóa Đơn: ");
-        name = sc.nextLine();
+        // System.out.println("Chọn Hóa Đơn: ");
+        // name = sc.nextLine();
         
         if (name.equals("theo gio")) {
             while (true) {
